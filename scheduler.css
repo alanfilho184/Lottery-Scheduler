@@ -1,0 +1,146 @@
+:root {
+    --background: #1A181B;
+    --primary: #564D65;
+    --text: #D3D5D4;
+    --highlight: #f56d6d;
+    --secondary: #9DB5B2;
+}
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--background);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.7em;
+    height: max-content;
+}
+
+.running {
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.runningInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--text);
+    border-radius: 5px;
+    width: 35%;
+    margin: 10px;
+}
+
+.runningInfo div h2, .runningInfo div h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.runningInfo .runningProcess {
+    width: 20em;
+    width: max-content;
+}
+
+.runningInfo .cores {
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.runningInfo .cores h4 {
+    margin: 5px;
+}
+
+.generalInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.generalInfo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--text);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 21%;
+    height: 4em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.processList {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 100%
+}
+
+.process {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid var(--text);
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    width: 20em;
+    height: 10em;
+}
+
+.process h4, .process .barColor {
+    margin: 5px;
+}
+
+.barColor {
+    background-color: var(--background);
+    border: 2px solid var(--text);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.progressBar {
+    background-color: var(--primary);
+    border-radius: 3px;
+    max-width: 100%;
+    padding: 0;
+}

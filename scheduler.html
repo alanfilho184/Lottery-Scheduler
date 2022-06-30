@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scheduler.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Lottery Scheduler</title>
+</head>
+
+<body>
+    <div class="info">
+        <h1>Escalonador Lottery</h1>
+        <div class="running">
+            <div class="runningInfo">
+                <div class="runningProcess">
+                    <h4 id="runningProcessTitle">Sendo executado agora</h4>
+                    <div class="cores"></div>
+                </div>
+            </div>
+            <div class="generalInfo">
+                <div class="waitingProcess">
+                    <h4>Processos em espera</h4>
+                    <h2 id="waitingProcesses">0</h2>
+                </div>
+                <div class="totalTickets">
+                    <h4>Total de tickets criados</h4>
+                    <h2 id="totalTickets">0</h2>
+                </div>
+                <div class="ticketsNow">
+                    <h4>Tickets existentes</h4>
+                    <h2 id="ticketsNow">0</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <h2>Processos existentes</h2>
+        <div class="processList"></div>
+    </main>
+    <script src="scheduler.js"></script>
+</body>
+
+</html>
