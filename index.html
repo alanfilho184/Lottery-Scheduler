@@ -15,8 +15,25 @@
 </head>
 
 <body>
-    <div class="info">
+    <div class="config">
         <h1>Escalonador Lottery</h1>
+        <div class="getConfig">
+            <div class="control">
+                <label for="qtdNucleos">Quantidade de Núcleos:</label>
+                <input type="number" id="qtdNucleos" placeholder="8" value="8"></input>
+            </div>
+            <div class="control">
+                <label for="qtdProcessos">Quantidade de Processos:</label>
+                <input type="number" id="qtdProcessos" placeholder="100" value="150"></input>
+            </div>
+            <div class="control">
+                <label for="cpuCores">Tempo de Execução (ms):</label>
+                <input type="number" id="timeout" placeholder="120" value="120"></input>
+            </div>
+        </div>
+        <button id="restart">Reiniciar</button>
+    </div>
+    <div class="info">
         <div class="running">
             <div class="runningInfo">
                 <div class="runningProcess">

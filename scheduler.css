@@ -16,10 +16,72 @@ body {
     background-color: var(--background);
 }
 
+.config {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.getConfig {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--text);
+    border-radius: 5px;
+    width: 25%;
+    margin: 10px;
+    padding: 5px;
+}
+
+.control label, .control input {
+    margin: 5px;
+    outline: none;
+}
+
+.control input {
+    color: var(--background);
+    background-color: var(--text);
+    border: 2px solid var(--text);
+    border-radius: 5px;
+    width: 70%;
+    text-align: center;
+}
+
+.config button {
+    color: var(--text);
+    background-color: var(--background);
+    border: 2px solid var(--text);
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.config button:hover{
+    color: var(--background);
+    background-color: var(--text);
+    border: 2px solid var(--background);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
 .info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 10px;
     margin-bottom: 20px;
     text-align: center;
@@ -44,7 +106,6 @@ body {
     border: 2px solid var(--text);
     border-radius: 5px;
     width: 35%;
-    margin: 10px;
 }
 
 .runningInfo div h2, .runningInfo div h4 {
@@ -80,6 +141,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    width: max-content;
 }
 
 .generalInfo div {
