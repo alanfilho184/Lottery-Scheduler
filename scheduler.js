@@ -177,13 +177,6 @@ async function main() {
             processos_nucleo[nucleo][processo_sorteado.id] = processo_sorteado
             exibir_processo(processos)
 
-            processo_sorteado.status = "Bloqueado"
-            processo_sorteado.nucleo = "Fora"
-
-            processos[processo_sorteado.id] = processo_sorteado
-            processos_nucleo[nucleo][processo_sorteado.id] = processo_sorteado
-            exibir_processo(processos)
-
             processo_sorteado.status = "Em espera"
             processo_sorteado.nucleo = "Fora"
 
